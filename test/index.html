@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ja" class="noJS">
+
+<head>
+
+<meta charset="utf-8">
+<meta name="Description" content="">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=10.0, user-scalable=yes">
+
+<!-- <meta property="fb:app_id" content="アプリID"> -->
+<meta property="og:url"           content="タイムラインに流れるURL">
+<meta property="og:type"          content="website">
+<meta property="og:title"         content="タイムラインに流れるタイトル">
+<meta property="og:description"   content="タイムラインに流れるディスクリプション">
+<meta property="og:image"         content="http://～～/files/img/common/ogp.png　ogp画像のURL 絶対パスで">
+
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="stylesheet" type="text/css" href="/files/css/common/import.css" media="all">
+<link rel="stylesheet" type="text/css" href="/files/js/bxSlider/jquery.bxslider.css" media="screen">
+<link rel="stylesheet" type="text/css" href="/files/css/top.css" media="all">
+
+<title>介護の求人サイト　かいご畑</title>
+
+<script src="/files/js/jquery.js"></script>
+<script src="/files/js/common.js"></script>
+<!--[if lt IE 9]><script src="/files/js/html5_ie.js"></script><![endif]-->
+<!--[if (gte IE 6)&(lte IE 8)]><script src="/files/js/selectivizr-min.js"></script><![endif]-->
+
+<script src="/files/js/jquery.carouFredSel-6.2.1-packed.js"></script>
+<script src="/files/js/jquery.biggerlink.js"></script>
+<script src="/files/js/bxSlider/jquery.bxslider.js"></script>
+<script src="/files/js/top.js"></script>
+
+</head>
+
+<body>
+<div id="container">
+
+<div id="header">
+
+	<h1 id="siteID"><span>介護の求人・転職・募集なら</span><a href="/"><img src="/files/img/common/logo_01.png" alt="かいご畑"></a></h1>
+
+	<div id="hdrRight">
+		<div class="hdrContact">
+			<p class="mgb5">電話でのお問い合わせOK！</p>
+			<p><img src="/files/img/common/header_tel.png" alt="フリーコール0120-921-871"></p>
+			<p>8:00-22:00 ※土・日・祝日も受付中</p>
+		</div>
+		
+		<ul class="hdrNav">
+			<li class="history"><a href=""><img src="/files/img/common/btn_history.png" alt="最近見た求人"><span>5</span></a></li>
+			<li class="favorite"><a href=""><img src="/files/img/common/btn_favorite.png" alt="お気に入り"><span>5</span></a></li>
+			<li class="search"><p id="openMenu"><img src="/files/img/common/btn_search.png" alt="求人検索"></p></li>
+		</ul>
+	</div>
+
+	<nav id="layerMenu">
+		<div class="layerMenuInner"><img src="/files/img/common/btn_menu_sp_close.png" alt="close" width="55" height="60" id="closeMenu" class="iconMenu">
+			<div class="termSec">
+				<h3 class="layerTitle"><i class="fa fa-search colorOR"></i>求人検索</h3>
+				<div class="areaSelect">
+					<div class="prefSelect">
+						<select class="inputbox_add1" id="pref">
+							<option value="">都道府県</option>
+							<option value="13">東京都</option>
+							<option value="27">大阪府</option>
+							<option value="14">神奈川県</option>
+							<option value="12">千葉県</option>
+							<option value="28">兵庫県</option>
+							<option value="11">埼玉県</option>
+							<option value="34">広島県</option>
+							<option value="40">福岡県</option>
+							<option value="22">静岡県</option>
+							<option value="23">愛知県</option>
+							<option value="26">京都府</option>
+							<option value="8">茨城県</option>
+							<option value="29">奈良県</option>
+							<option value="25">滋賀県</option>
+							<option value="35">山口県</option>
+							<option value="21">岐阜県</option>
+							<option value="41">佐賀県</option>
+							<option value="10">群馬県</option>
+							<option value="24">三重県</option>
+							<option value="9">栃木県</option>
+							<option value="30">和歌山県</option>
+							<option value="33">岡山県</option>
+						</select>
+					</div>
+					<div class="citySelect">
+						<select name="area[]" id="city">
+							<option value="">市区町村</option>
+						</select>
+					</div>
+				</div>
+				
+				<div class="termBox">
+					<h4>職種<span> を閉じる</span><span class="cbList">└ 介護士、ケアマネジャー、サービス提供責任者、生活相談員、介護事務</span></h4>
+					<ul class="cbxList01">
+						<li><label><input type="checkbox" name="job_type[]" id="category002" value="001"></label><a href="">介護士</a></li>
+						<li><label><input type="checkbox" name="job_type[]" id="category002" value="002"></label><a href="">看護助手</a></li>
+						<li><label><input type="checkbox" name="job_type[]" id="category020" value="020"></label><a href="">訪問介護員</a></li>
+						<li><label><input type="checkbox" name="job_type[]" id="category005" value="005"></label><a href="">ケアマネジャー</a></li>
+						<li><label><input type="checkbox" name="job_type[]" id="category021" value="021"></label><a href="">サービス提供責任者</a></li>
+						<li><label><input type="checkbox" name="job_type[]" id="category022" value="022"></label><a href="">生活相談員</a></li>
+						<li><label><input type="checkbox" name="job_type[]" id="category023" value="023"></label><a href="">介護事務</a></li>
+						<li><label><input type="checkbox" name="job_type[]" id="category999" value="999"></label><a href="">その他</a></li>
+					</ul>
+					<h4>サービス種別 <span>を閉じる</span><span class="cbList">└ </span></h4>
+					<ul class="cbxList01">
+						<li><label><input type="checkbox" name="service_type[]" id="service01" value="01"></label><a href="">特別養護老人ホーム</a></li>
+						<li><label><input type="checkbox" name="service_type[]" id="service02" value="02"></label><a href="">介護老人保健施設</a></li>
+						<li><label><input type="checkbox" name="service_type[]" id="service03" value="03"></label><a href="">介護療養型医療施設</a></li>
+						<li><label><input type="checkbox" name="service_type[]" id="service17" value="17"></label><a href="">サービス付き高齢者向け住宅</a></li>
+					</ul>
+					<h4>雇用形態 <span>を閉じる</span><span class="cbList">└ </span></h4>
+					<ul class="cbxList01">
+						<li><label><input type="checkbox" name="employ_type[]" id="employ9" value="9"></label><a href="">職業紹介</a></li>
+						<li><label><input type="checkbox" name="employ_type[]" id="employ2" value="2"></label><a href="">派遣社員</a></li>
+						<li><label><input type="checkbox" name="employ_type[]" id="employ3" value="3"></label><a href="">紹介予定派遣</a></li>
+						<li><label><input type="checkbox" name="employ_type[]" id="employ0" value="0"></label><a href="">雇用形態</a></li>
+					</ul>
+					<h4>こだわり条件 <span>を閉じる</span><span class="cbList">└ </span></h4>
+					<ul class="cbxList01">
+						<li><label><input type="checkbox" name="detail_type[]" id="kodawari013" value="013"></label><a href="">マイカー通勤OK</a></li>
+						<li><label><input type="checkbox" name="detail_type[]" id="kodawari007" value="007"></label><a href="">駅近</a></li>
+						<li><label><input type="checkbox" name="detail_type[]" id="kodawari017" value="017"></label><a href="">キャリアアップ応援制度</a></li>
+						<li><label><input type="checkbox" name="detail_type[]" id="kodawari031" value="031"></label><a href="">週払いOK</a></li>
+						<li><label><input type="checkbox" name="detail_type[]" id="kodawari011" value="011"></label><a href="">週３日～OK</a></li>
+						<li><label><input type="checkbox" name="detail_type[]" id="kodawari019" value="019"></label><a href="">短時間OK</a></li>
+						<li><label><input type="checkbox" name="detail_type[]" id="kodawari010" value="010"></label><a href="">日勤のみOK</a></li>
+						<li><label><input type="checkbox" name="detail_type[]" id="kodawari009" value="009"></label><a href="">夜勤専門</a></li>
+						<li><label><input type="checkbox" name="detail_type[]" id="kodawari002" value="002"></label><a href="">日曜休み</a></li>
+						<li><label><input type="checkbox" name="detail_type[]" id="kodawari900" value="900"></label><a href="">無資格・未経験OK</a></li>
+						<li><label><input type="checkbox" name="detail_type[]" id="kodawari014" value="014"></label><a href="">ブランクOK</a></li>
+						<li><label><input type="checkbox" name="detail_type[]" id="kodawari024" value="024"></label><a href="">交通費支給</a></li>
+						<li><label><input type="checkbox" name="detail_type[]" id="kodawari020" value="020"></label><a href="">各種保険完備</a></li>
+						<li><label><input type="checkbox" name="detail_type[]" id="kodawari012" value="012"></label><a href="">寮・社宅制度完備</a></li>
+						<li><label><input type="checkbox" name="detail_type[]" id="kodawari023" value="023"></label><a href="">退職金制度あり</a></li>
+						<li><label><input type="checkbox" name="detail_type[]" id="kodawari015" value="015"></label><a href="">4月入社</a></li>
+					</ul>
+				</div>
+				
+				<ul class="btnUnit01">
+					<li><a href=""><img width="345" height="61" src="/files/img/top/btn_search_01.png" alt="検索する" class="spNone"><img src="/files/img/top/btn_search_01_sp.png" alt="" class="pcNone"></a></li>
+					<li><img src="/files/img/common/btn_menu_close.png" alt="" id="closeMenu2"></li>
+				</ul>
+			</div>
+
+		</div>
+	</nav>
+</div><!-- /header -->
+
+<noscript><p id="noscript">当サイトでは、JavaScriptを使用しております。<br>
+JavaScriptを有効にしていただきますと、より快適にご覧いただけます。</p></noscript>
+
+<div id="topLead">
+	<p>厚生労働大臣認可 <span>介護 就職支援センター</span></p>
+</div>
+
+<div id="keyVisualWrap">
+	<div id="keyVisual">
+		<div class="slide"><a href=""><img width="1500" height="360" src="/files/img/top/mv_01.jpg" alt="" class="spNone"><img src="/files/img/top/mv_01_sp.jpg" alt="" class="pcNone"></a></div>
+		<div class="slide"><a href=""><img width="1500" height="360" src="/files/img/top/mv_02.jpg" alt="" class="spNone"><img src="/files/img/top/mv_02_sp.jpg" alt="" class="pcNone"></a></div>
+		<div class="slide"><a href=""><img width="1500" height="360" src="/files/img/top/mv_03.jpg" alt="" class="spNone"><img src="/files/img/top/mv_03_sp.jpg" alt="" class="pcNone"></a></div>
+	</div>
+	<div class="pagination" id="mv_pag"></div>
+</div>
+
+<div id="content">
+
+	<div id="main">
+		<div class="section01">
+			<h2 class="title02 iconSearch">求人を検索</h2>
+			<p class="date">最終更新日：2016.03.29／求人件数：7,822件</p>
+			<div class="searchSec">
+				<div class="areaSec">
+					<h3>エリアで検索</h3>
+					<div id="areaMap">
+						<div class="mapBody"><img src="/files/img/top/map_area_01.png" alt="map" class="spNone"><img src="/files/img/top/map_area_sp.png" alt="map" class="pcNone"></div>
+						<ul>
+							<li class="mapChugoku"><a href="">中国<br>四国</a></li>
+							<li class="mapKansai"><a href="">関西</a></li>
+							<li class="mapTokai"><a href="">東海</a></li>
+							<li class="mapKanto"><a href="">関東</a></li>
+							<li class="mapKyusyu"><a href="">九州<br>沖縄</a></li>
+							<li class="mapHokuriku"><span>北陸<br>甲信越</span></li>
+							<li class="mapTohoku"><span>東北<br>北海道</span></li>
+						</ul>
+					</div>
+					<div class="areaBox" id="kanto">
+						<h4>関東</h4>
+						<ul>
+							<li><a href="">東京</a></li>
+							<li><a href="">神奈川</a></li>
+							<li><a href="">千葉</a></li>
+							<li><a href="">埼玉</a></li>
+							<li><a href="">群馬</a></li>
+							<li><a href="">栃木</a></li>
+							<li><a href="">茨城</a></li>
+						</ul>
+					</div>					
+					<div class="areaBox" id="kansai">
+						<h4>関西</h4>
+						<ul>
+							<li><a href="">大阪</a></li>
+							<li><a href="">兵庫</a></li>
+							<li><a href="">京都</a></li>
+							<li><a href="">滋賀</a></li>
+							<li><a href="">奈良</a></li>
+							<li><a href="">和歌山</a></li>
+						</ul>
+					</div>					
+					<div class="areaBox" id="tokai">
+						<h4>東海</h4>
+						<ul>
+							<li><a href="">愛知</a></li>
+							<li><a href="">岐阜</a></li>
+							<li><a href="">静岡</a></li>
+							<li><a href="">三重</a></li>
+						</ul>
+					</div>					
+					<div class="areaBox" id="chugoku">
+						<h4>中国</h4>
+						<ul>
+							<li><a href="">広島</a></li>
+							<li><a href="">山口</a></li>
+						</ul>
+					</div>					
+					<div class="areaBox" id="kyusyu">
+						<h4>九州</h4>
+						<ul>
+							<li><a href="">福岡</a></li>
+							<li><a href="">佐賀</a></li>
+						</ul>
+					</div>					
+				
+				</div>
+				<div class="termSec">
+					<h3>詳細条件で検索</h3>
+
+					<div class="areaSelect">
+						<div class="prefSelect">
+							<select class="inputbox_add1" id="pref">
+								<option value="">都道府県</option>
+								<option value="13">東京都</option>
+								<option value="27">大阪府</option>
+								<option value="14">神奈川県</option>
+								<option value="12">千葉県</option>
+								<option value="28">兵庫県</option>
+								<option value="11">埼玉県</option>
+								<option value="34">広島県</option>
+								<option value="40">福岡県</option>
+								<option value="22">静岡県</option>
+								<option value="23">愛知県</option>
+								<option value="26">京都府</option>
+								<option value="8">茨城県</option>
+								<option value="29">奈良県</option>
+								<option value="25">滋賀県</option>
+								<option value="35">山口県</option>
+								<option value="21">岐阜県</option>
+								<option value="41">佐賀県</option>
+								<option value="10">群馬県</option>
+								<option value="24">三重県</option>
+								<option value="9">栃木県</option>
+								<option value="30">和歌山県</option>
+								<option value="33">岡山県</option>
+							</select>
+						</div>
+						<div class="citySelect">
+							<select name="area[]" id="city">
+								<option value="">市区町村</option>
+							</select>
+						</div>
+					</div>
+					
+					<div class="termBox">
+						<h4>職種 <span>を閉じる</span><span class="cbList">└ 介護士、看護助手、ケアマネジャー、サービス提供責任者、生活相談員</span></h4>
+						<ul class="cbxList01">
+							<li><label><input type="checkbox" name="job_type[]" id="category002" value="001"></label><a href="">介護士</a></li>
+							<li><label><input type="checkbox" name="job_type[]" id="category002" value="002"></label><a href="">看護助手</a></li>
+							<li><label><input type="checkbox" name="job_type[]" id="category020" value="020"></label><a href="">訪問介護員</a></li>
+							<li><label><input type="checkbox" name="job_type[]" id="category005" value="005"></label><a href="">ケアマネジャー</a></li>
+							<li><label><input type="checkbox" name="job_type[]" id="category021" value="021"></label><a href="">サービス提供責任者</a></li>
+							<li><label><input type="checkbox" name="job_type[]" id="category022" value="022"></label><a href="">生活相談員</a></li>
+							<li><label><input type="checkbox" name="job_type[]" id="category023" value="023"></label><a href="">介護事務</a></li>
+							<li><label><input type="checkbox" name="job_type[]" id="category999" value="999"></label><a href="">その他</a></li>
+						</ul>
+						<h4>サービス種別 <span>を閉じる</span><span class="cbList">└ </span></h4>
+						<ul class="cbxList01">
+							<li><label><input type="checkbox" name="service_type[]" id="service01" value="01"></label><a href="">特別養護老人ホーム</a></li>
+							<li><label><input type="checkbox" name="service_type[]" id="service02" value="02"></label><a href="">介護老人保健施設</a></li>
+							<li><label><input type="checkbox" name="service_type[]" id="service03" value="03"></label><a href="">介護療養型医療施設</a></li>
+							<li><label><input type="checkbox" name="service_type[]" id="service17" value="17"></label><a href="">サービス付き高齢者向け住宅</a></li>
+						</ul>
+						<h4>雇用形態 <span>を閉じる</span><span class="cbList">└ </span></h4>
+						<ul class="cbxList01">
+							<li><label><input type="checkbox" name="employ_type[]" id="employ9" value="9"></label><a href="">職業紹介</a></li>
+							<li><label><input type="checkbox" name="employ_type[]" id="employ2" value="2"></label><a href="">派遣社員</a></li>
+							<li><label><input type="checkbox" name="employ_type[]" id="employ3" value="3"></label><a href="">紹介予定派遣</a></li>
+							<li><label><input type="checkbox" name="employ_type[]" id="employ0" value="0"></label><a href="">雇用形態</a></li>
+						</ul>
+						<h4>こだわり条件 <span>を閉じる</span><span class="cbList">└ </span></h4>
+						<ul class="cbxList01">
+							<li><label><input type="checkbox" name="detail_type[]" id="kodawari013" value="013"></label><a href="">マイカー通勤OK</a></li>
+							<li><label><input type="checkbox" name="detail_type[]" id="kodawari007" value="007"></label><a href="">駅近</a></li>
+							<li><label><input type="checkbox" name="detail_type[]" id="kodawari017" value="017"></label><a href="">キャリアアップ応援制度</a></li>
+							<li><label><input type="checkbox" name="detail_type[]" id="kodawari031" value="031"></label><a href="">週払いOK</a></li>
+							<li><label><input type="checkbox" name="detail_type[]" id="kodawari011" value="011"></label><a href="">週３日～OK</a></li>
+							<li><label><input type="checkbox" name="detail_type[]" id="kodawari019" value="019"></label><a href="">短時間OK</a></li>
+							<li><label><input type="checkbox" name="detail_type[]" id="kodawari010" value="010"></label><a href="">日勤のみOK</a></li>
+							<li><label><input type="checkbox" name="detail_type[]" id="kodawari009" value="009"></label><a href="">夜勤専門</a></li>
+							<li><label><input type="checkbox" name="detail_type[]" id="kodawari002" value="002"></label><a href="">日曜休み</a></li>
+							<li><label><input type="checkbox" name="detail_type[]" id="kodawari900" value="900"></label><a href="">無資格・未経験OK</a></li>
+							<li><label><input type="checkbox" name="detail_type[]" id="kodawari014" value="014"></label><a href="">ブランクOK</a></li>
+							<li><label><input type="checkbox" name="detail_type[]" id="kodawari024" value="024"></label><a href="">交通費支給</a></li>
+							<li><label><input type="checkbox" name="detail_type[]" id="kodawari020" value="020"></label><a href="">各種保険完備</a></li>
+							<li><label><input type="checkbox" name="detail_type[]" id="kodawari012" value="012"></label><a href="">寮・社宅制度完備</a></li>
+							<li><label><input type="checkbox" name="detail_type[]" id="kodawari023" value="023"></label><a href="">退職金制度あり</a></li>
+							<li><label><input type="checkbox" name="detail_type[]" id="kodawari015" value="015"></label><a href="">4月入社</a></li>
+						</ul>
+					</div>
+					
+					<ul class="btnUnit01">
+						<li><a href=""><img width="345" height="61" src="/files/img/top/btn_search_01.png" alt="検索する" class="spNone"><img src="/files/img/top/btn_search_01_sp.png" alt="" class="pcNone"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	
+		<div class="section01">
+			<h2 class="title02 iconFlag">ピックアップ求人</h2>
+			<ul class="pickupList01">
+				<li><a href=""><img width="320" height="110" src="/files/img/top/bnr_pickup_01.png" alt="DEMO" class="spNone"><img src="/files/img/top/bnr_pickup_01_sp.png" alt="" class="pcNone"></a></li>
+				<li><a href=""><img width="320" height="110" src="/files/img/top/bnr_pickup_02.png" alt="DEMO" class="spNone"><img src="/files/img/top/bnr_pickup_02_sp.png" alt="" class="pcNone"></a></li>
+				<li><a href=""><img width="320" height="110" src="/files/img/top/bnr_pickup_01.png" alt="DEMO" class="spNone"><img src="/files/img/top/bnr_pickup_01_sp.png" alt="" class="pcNone"></a></li>
+			</ul>
+		</div>
+	
+		<div class="section01">
+			<h2 class="title02 iconClip">かいご業界の働き方</h2>
+			<ul class="methodList01">
+				<li class="bigLink">
+					<img width="320" height="226" src="/files/img/top/img_method_01.jpg" alt="" class="spNone"><img src="/files/img/top/img_method_01_sp.jpg" alt="" class="pcNone">
+					<a href="" class="methodLink"><h4>無資格・未経験からスタート</h4><p>かいご業界のお仕事がはじめての方向けコンテンツ</p></a>
+				</li>			
+				<li class="bigLink">
+					<img width="320" height="226" src="/files/img/top/img_method_02.jpg" alt="" class="spNone"><img src="/files/img/top/img_method_02_sp.jpg" alt="" class="pcNone">
+					<a href="" class="methodLink"><h4>経験を活かしキャリアアップ</h4><p>かいご業界での経験がある方向けのコンテンツ</p></a>
+				</li>
+				<li>		
+					<div class="btnInterview">
+						<a href="">
+							<img width="120" height="120" src="/files/img/top/img_method_03.jpg" alt="">
+							<p><span>先輩へのインタビュー<br>vol.13</span><br>柳原 清美さん</p>
+						</a>
+					</div>
+					<div class="btnStyle01"><a href="">先輩へのインタビューをもっと見る</a></div>
+				</li>
+			</ul>		
+		</div>
+
+		<div class="section01">
+			<h2 class="title02 iconPencil">かいごのお役立ち情報</h2>
+			<div id="newsSec">
+	
+				<div class="newsSlider">
+					<div class="slide"><a href="">
+						<h5>かいごニュース</h5>
+						<img src="files/img/top/img_news_01.jpg">
+						<p><span>NEW</span>介護業界のキャリアプランを考える</p></a>
+					</div>
+					<div class="slide"><a href="">
+						<h5>かいごニュース</h5>
+						<img src="files/img/top/img_news_02.jpg">
+						<p><span>NEW</span>高齢者に多い歩行障害とは？</p></a>
+					</div>
+					<div class="slide"><a href="">
+						<h5>かいごニュース</h5>
+						<img src="files/img/top/img_news_01.jpg">
+						<p><span>NEW</span>１行の場合</p></a>
+					</div>
+					<div class="slide"><a href="">
+						<h5>かいごニュース</h5>
+						<img src="files/img/top/img_news_02.jpg">
+						<p><span>NEW</span>高齢者に多い歩行障害とは？</p></a>
+					</div>
+				</div>
+	
+				<div class="moreNews">
+					<p class="btnStyle01"><a href="">かいごニュースをもっと見る</a></p>
+				</div>
+			</div>
+			<ul class="usefulList01">
+				<li><a href="">かいごの資格</a></li>
+				<li><a href="">かいごの用語辞典</a></li>
+				<li><a href="">情報誌（ケアフレンズ）バックナンバー</a></li>
+				<li><a href="">メルマガバックナンバー</a></li>
+			</ul>			
+		</div>
+
+		<div class="section01">
+			<h2 class="title02 iconLeaf">サービス紹介</h2>
+			<ul class="serviceList01">
+				<li class="bigLink">
+					<img width="235" height="166" src="/files/img/top/img_service_01.jpg" alt="" class="spNone"><img src="/files/img/top/img_service_01_sp.jpg" alt="" class="pcNone">
+					<a href=""><h4>かいご畑って？</h4><p>かいご畑をはじめてご利用の方へ</p></a>
+				</li>			
+				<li class="bigLink">
+					<img width="235" height="166" src="/files/img/top/img_service_02.jpg" alt="" class="spNone"><img src="/files/img/top/img_service_02_sp.jpg" alt="" class="pcNone">
+					<a href=""><h4>キャリアアップ応援制度とは？</h4><p>働きながら０円で介護資格が取れる！</p></a>
+				</li>
+				<li class="bigLink">
+					<img width="235" height="166" src="/files/img/top/img_service_03.jpg" alt="" class="spNone"><img src="/files/img/top/img_service_03_sp.jpg" alt="" class="pcNone">
+					<a href=""><h4>給与週払い制度</h4><p>急な出費でも安心！</p></a>
+				</li>
+				<li class="bigLink">
+					<img width="235" height="166" src="/files/img/top/img_service_04.jpg" alt="" class="spNone"><img src="/files/img/top/img_service_04_sp.jpg" alt="" class="pcNone">
+					<a href=""><h4>選べる働き方</h4><p>雇用形態別の特徴をご説明します</p></a>
+				</li>
+			</ul>
+			<ul class="serviceList02">
+				<li><a href="">よくあるご質問</a></li>
+				<li><a href="">お問い合わせ</a></li>
+			</ul>
+		</div>
+
+		<div class="section01 pdb0">
+			<h2 class="title02 iconBldg">就職支援センター 概要</h2>
+			<ul class="aboutList01">
+				<li class="bigLink">
+					<a href=""><img width="90" height="90" src="/files/img/top/img_about_01.jpg" alt="" class="spNone"><img src="/files/img/top/img_about_01_sp.jpg" alt="" class="pcNone">
+					<h4>就職支援センターへのアクセス</h4>
+					<p>コーディネーターと面談でお仕事相談できます（無料）</p></a>
+				</li>
+				<li class="bigLink">
+					<a href=""><img width="90" height="90" src="/files/img/top/img_about_02.jpg" alt="" class="spNone"><img src="/files/img/top/img_about_02_sp.jpg" alt="" class="pcNone">
+					<h4>夜間・土日のお仕事相談会</h4>
+					<p>日中の面談が難しい方向けの相談会です</p></a>
+				</li>
+				<li class="bigLink">
+					<a href=""><img width="90" height="90" src="/files/img/top/img_about_03.jpg" alt="" class="spNone"><img src="/files/img/top/img_about_03_sp.jpg" alt="" class="pcNone">
+					<h4>出張 お仕事相談会</h4>
+					<p>面談会場が遠い方向けの相談会です</p></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- /main -->
+
+</div>
+<!-- /content -->
+
+<div id="footer">
+	<div class="ftrInner">
+		<p class="btnPagetop"><a href="#container"><img src="/files/img/common/btn_pagetop.png" alt="ページトップへ" width="50" height="50"></a></p>
+		<p class="btnPagetopSp"><a href="#container"><img src="/files/img/common/btn_pagetop.png" alt="" width="48" height="48"></a></p>
+	
+		<ul class="ftrNav01">
+			<li><a href="">会社情報</a></li>
+			<li><a href="">利用規約</a></li>
+			<li><a href="">サイトマップ</a></li>
+			<li><a href="">プライバシーポリシー</a></li>
+		</ul>		
+
+		<ul class="ftrBnr01">
+			<li><a href=""><img src="/files/img/common/bnr_nisso_01.png" alt="" width="241" height="64" class="spNone"><img src="/files/img/common/bnr_nisso_01_sp.png" alt="" class="pcNone"></a></li>
+			<li><a href=""><img src="/files/img/common/bnr_approve.png" alt="" width="241" height="64" class="spNone"><img src="/files/img/common/bnr_approve_sp.png" alt="" class="pcNone"></a></li>
+			<li><a href=""><img src="/files/img/common/bnr_fb_01.png" alt="" width="241" height="64" class="spNone"><img src="/files/img/common/bnr_fb_01_sp.png" alt="" class="pcNone"></a></li>
+			<li><a href=""><img src="/files/img/common/bnr_person_01.png" alt="" width="241" height="65" class="spNone"><img src="/files/img/common/bnr_person_01_sp.png" alt="" class="pcNone"></a></li>
+		</ul>		
+
+		<div class="spNone">
+			<h3><span>関連サイト</span></h3>
+			<ul class="ftrBnr01">
+				<li><a href=""><img src="/files/img/common/bnr_kaigo_01.png" alt="" width="241" height="60"></a></li>
+				<li><a href=""><img src="/files/img/common/bnr_hoiku_01.png" alt="" width="241" height="60"></a></li>
+				<li><a href=""><img src="/files/img/common/bnr_kango_01.png" alt="" width="241" height="60"></a></li>
+				<li><a href=""><img src="/files/img/common/bnr_hotto_01.png" alt="" width="241" height="60"></a></li>
+			</ul>
+		</div>
+		
+		<p class="sslBnr"><img src="/files/img/common/bnr_ssl_01.png" alt="" width="310" height="33" class="spNone"><img src="/files/img/common/bnr_ssl_01_sp.png" alt="" class="pcNone"></p>
+	</div>
+	<p class="copyRight">Copyright(c)　2012 NISSO NET ALL Right Reserved</p>
+</div>
+<!-- /footer -->
+
+</div><!-- /container -->
+</body>
+</html>

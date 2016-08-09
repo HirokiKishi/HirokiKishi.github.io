@@ -1,0 +1,150 @@
+<html>
+	
+<head>
+	<meta charset="UTF-8">
+
+<link rel="stylesheet" type="text/css" href="/sub/html/files/js/slick/slick.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="/sub/html/files/js/slick/slick-theme.css" media="screen" />
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="/sub/html/files/js/slick/slick.min.js"></script>
+
+
+<script type="text/javascript">
+  
+$(function() {
+
+$('.slider').slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  adaptiveHeight: true
+});
+
+});
+
+</script>
+</head>
+
+<body>
+
+
+<div class="contents">
+
+<ul class="slider">
+  <li><img src="/sub/html/files/images/01.jpg"></li>
+  <li><img src="/sub/html/files/images/02.jpg"></li>
+  <li><img src="/sub/html/files/images/03.jpg"></li>
+  <li><img src="/sub/html/files/images/04.jpg"></li>
+  <li><img src="/sub/html/files/images/05.jpg"></li>
+  <li><img src="/sub/html/files/images/06.jpg"></li>
+  <li><img src="/sub/html/files/images/07.jpg"></li>
+  <li><img src="/sub/html/files/images/08.jpg"></li>
+  <li><img src="/sub/html/files/images/09.jpg"></li>
+  <li><img src="/sub/html/files/images/10.jpg"></li>
+  <li><img src="/sub/html/files/images/11.jpg"></li>
+  <li><img src="/sub/html/files/images/12.jpg"></li>
+  <li><img src="/sub/html/files/images/13.jpg"></li>
+</ul>
+
+<p style="margin: 50px 0 0 0;">
+  
+
+// ピカチュウをミックスインで定義 
+@mixin pikachu {<br>
+  width: 30px;<br>
+  height: 50px;<br>
+  display: block;<br>
+  color: yellow;<br>
+}<br>
+<br>   
+// 定義したピカチュウミックスインを読み込む<br>
+.satoshi {<br>
+  width: 30px;<br>
+  height: 50px;<br>
+  display: block;<br>
+<br>
+  .satoshi_pikachu-fine { <br>
+      @include pikachu;<br>
+  }<br>
+<br>
+  .satoshi_.pikachu-dying { <br>
+      @include pikachu;<br>
+      display: none;<br>
+    color: black;<br>
+  }<br>
+<br>
+  .satoshi_.pikachu-clrDffrt {  <br>
+      @include pikachu;<br>
+    color: blue;<br>
+  }<br>
+<br>
+}<br>
+
+
+</p>
+
+
+</div>
+
+  
+<style type="text/css">
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.contents {
+  width: 1000px;
+  margin: 0 auto;
+}
+  
+/*左右の矢印の色を変える*/
+.slick-prev:before,
+.slick-next:before {
+    color: #000;
+}
+/*左右の矢印の位置を変える*/
+.slick-next {
+    right: 20px;
+    z-index: 99;
+}
+.slick-prev {
+  left: 15px;
+    z-index: 100;
+}
+/*スライド数のドットの色を変える*/
+.slick-dots li.slick-active button:before,
+.slick-dots li button:before {
+    color: #fff;
+}
+/*スライド画像の横幅可変*/
+img {
+    max-width: 100%;
+  height: auto;
+}
+
+
+.slick-prev:before, .slick-next:before {
+  font-size: 30px!important;
+}
+
+.slick-arrow {
+
+}
+
+</style>
+
+
+</body>
+
+
+
+
+
+</html>
